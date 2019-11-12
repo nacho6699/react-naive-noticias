@@ -7,7 +7,7 @@ class MenuHeader extends React.Component {
 
   _onSearch = () => console.log('Searching');
 
-  _onMore = () => alert('Shown more');
+  _onMore = () => alert('App aún en desarrollo por cruzi3836@gmail.com');
 
   render() {
     return (
