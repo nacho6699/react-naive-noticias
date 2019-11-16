@@ -1,19 +1,19 @@
 {
   "expo": {
-    "name": "noticias potosi",
-    "slug": "niticias",
+    "name": "Noticias",
+    "slug": "noticias",
     "privacy": "public",
     "sdkVersion": "35.0.0",
     "platforms": [
-      "ios",
+     
       "android",
       "web"
     ],
     "version": "1.0.0",
     "orientation": "portrait",
-    "icon": "./assets/icon.png",
+    "icon": "./assets/icono.png",
     "splash": {
-      "image": "./assets/splash.png",
+      "image": "./assets/icono.png",
       "resizeMode": "contain",
       "backgroundColor": "#ffffff"
     },
@@ -25,6 +25,9 @@
     ],
     "ios": {
       "supportsTablet": true
+    },
+    "android":{
+      "package": "esto.esmi.app"
     }
   }
 }
