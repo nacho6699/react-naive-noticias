@@ -21,6 +21,8 @@ async function init(){
     let titular = $('main section .section-news div .col-md-8 div');
 
     let titulo = $(titular).find('.title-note').first().text();
+    let descripcion = $(titular).find('.main-section .container-text .description-note').text().trim();
+    //console.log(descripcion);
     let fecha = $(titular).find('.fecha-version .fecha').html().trim();
     let img = $(titular).find('.image-container img').attr('src');
     let img2 = $(titular).find('img').attr('src');
@@ -36,12 +38,13 @@ async function init(){
         }
         newTitulo = {
             titulo:titulo,
+            descripcion:descripcion,
             fecha:fecha,
             img:url_img,
             video:video,
             link:link
         }
-        //console.log(newTitulo);
+        console.log(newTitulo);
     }
 
     //obteniendo la lista de noticias--------------------------------
@@ -74,6 +77,7 @@ constructor(props){
   this.state = {
     titular:{
         titulo: '',
+        descripcion:'',
         fecha:'',
         img:imgDefault,
         video:'',
@@ -91,6 +95,7 @@ componentDidMount(){
         this.setState({
             titular:{
                 titulo:res.newTitulo.titulo,
+                descripcion:res.newTitulo.descripcion,
                 fecha:res.newTitulo.fecha,
                 img:res.newTitulo.img,
                 video:res.newTitulo.video,

@@ -12,6 +12,9 @@ class Home extends Component{
             <TouchableOpacity style={styles.contentImg} onPress={() => this.props.navigation.navigate('elPotosi')}>
                 <Image resizeMode="stretch" source={require('../../assets/elpotosi.png')} style={styles.img}/>
             </TouchableOpacity>
+            <TouchableOpacity style={styles.contentImg} onPress={() => this.props.navigation.navigate('laRazon')}>
+                <Image resizeMode="stretch" source={require('../../assets/larazon.png')} style={styles.img}/>
+            </TouchableOpacity>
           </ScrollView>  
         </View>
     );

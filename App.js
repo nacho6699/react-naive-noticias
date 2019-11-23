@@ -4,6 +4,7 @@ import { Card,Divider, ListItem, Button, Icon } from 'react-native-elements';
 //import Icon from 'react-native-vector-icons/FontAwesome';
 import MenuHeader from './components/MenuHeader'
 import ElPotosi from './src/views/elpotosi'
+import LaRazon from './src/views/laRazon'
 import Home from './src/views/Home'
 import {createAppContainer} from 'react-navigation';
 import {createStackNavigator} from 'react-navigation-stack';
@@ -32,6 +33,12 @@ const AppNavigator = createStackNavigator({
     screen:ElPotosi,
     navigationOptions:{
       title:'EL Potosí'
+    }
+  },
+  laRazon:{
+    screen:LaRazon,
+    navigationOptions:{
+      title:'La Razón'
     }
   }
 },{headerLayoutPreset:'center'});

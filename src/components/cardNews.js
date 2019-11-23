@@ -7,20 +7,9 @@ function CardNews (props){
     
      _detalles = async () => {
 
-        //para obtener la descripción de esta notici--------
-    const response = await fetch(
-        props.datosTitular.link
-    );
-    const htmlString = await response.text();
-    const $ = cheerio.load(htmlString);
-    console.log($);
-        //let titular = $('main section .section-news div .col-md-8 div');
-    
-        //let titulo = $(titular).find('.title-note').first().text();
-    
         Alert.alert(
             props.datosTitular.titulo,
-            props.datosTitular.link,
+            props.datosTitular.descripcion,
             [
                {text: 'Cerrar', onPress: () => console.log('OK Pressed')},
             ],
